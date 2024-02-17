@@ -1,0 +1,497 @@
+/* FEDCHAIRSIM v5.0 - 21/12/2023 */
+
+#brr{
+    width: 100%
+  }
+  
+  
+  
+  
+  .mask {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 12.5rem;
+    height: 6.25rem;
+    margin: 0.75rem;
+  }
+  .semi-circle {
+    position: relative;
+    display: block;
+    width: 12.5rem;
+    height: 6.25rem;
+    background: linear-gradient(to right, #04ED00 0%, #FFA500 25%, #F00015 100%);
+    border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+  }
+  .semi-circle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    width: 8.75rem;
+    height: 4.375rem;
+    margin-left: -4.375rem;
+    background: #fff;
+    border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+  }
+  .semi-circle--mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12.5rem;
+    height: 12.5rem;
+    background: transparent;
+    transform: rotate(120deg) translate3d(0, 0, 0);
+    transform-origin: center center;
+    backface-visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .semi-circle--mask::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: 2;
+    display: block;
+    width: 12.625rem;
+    height: 6.375rem;
+    margin: -1px 0 0 -1px;
+    background: #f2f2f2;
+    border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+  }
+  .gauge--1 .semi-circle {
+    background: #1abc9c;
+  }
+  .gauge--2 .semi-circle {
+    background: #c0392b;
+  }
+  .gauge--2 .semi-circle--mask {
+    transform: rotate(20deg) translate3d(0, 0, 0);
+  }
+  
+  .headerlogo{
+    background-color: #0D182C;
+  z-index: 999;
+  }
+
+  h1 {
+    height:10px
+  }
+
+  .footer{
+    background-color: #0D182C;
+    position: relative;
+  z-index: 999;
+  box-shadow: 0 50vh 0 50vh #0D182C;
+  }
+  
+  #chairmancontrolpanel{
+    
+
+    position: sticky;
+  top: 82vh;
+  z-index: 999;
+  height: 0px
+
+
+  }
+
+  .modallogo {
+    width: 100%;
+  }
+  
+  .modalheader{
+    background-color: #0D182C;
+    
+  }
+  
+  #rules{
+    text-align: left;
+  }
+  
+  .modal-footer {
+    background-color: #0D182C
+
+  }
+
+  .startgamemodal {
+    background-color: #04ED00;
+    border-color: #04ED00;
+    transition: box-shadow 0.4s ease-in-out;
+
+  }
+
+  .startgamemodal:hover{
+    background-color: #04ED00;
+    border-color: #04ED00;
+    box-shadow:  0px 0px 25px rgba(4, 237, 0, 0.886);
+
+  }
+
+  .startgamemodal:active{
+    box-shadow:  0px 0px 25px rgba(4, 237, 0, 0.886);
+
+  }
+
+  .startgameafterdefeat {
+    box-shadow:  0px 0px 25px rgba(4, 237, 0, 0.886);
+    animation: greenpulse 2s infinite;
+
+  }
+
+  @keyframes greenpulse {
+	0% {
+        box-shadow:  0px 0px 0px rgba(4, 237, 0, 0.886);
+
+	}
+
+
+    50% {
+        box-shadow:  0px 0px 50px rgba(4, 237, 0, 0.886);
+
+	}
+
+	100% {
+        box-shadow:  0px 0px 0px rgba(4, 237, 0, 0.886);
+
+	}
+
+
+
+
+    
+}
+
+.redbutton {
+  background-color: #F00015;
+  border-color: #F00015;
+  transition: box-shadow 0.4s ease-in-out;
+
+}
+
+.redbutton:hover{
+  background-color: #F00015;
+  border-color: #F00015;
+  box-shadow:  0px 0px 25px rgba(240, 0, 21, 1);
+
+}
+
+.redbutton:active{
+  box-shadow:  0px 0px 25px rgba(240, 0, 21, 1);
+
+}
+
+#footerlogo {
+    max-width: 350px;
+}
+
+.warningcard{
+    background-color: #FFFF00;
+}
+
+
+
+    .yellowcard {
+    box-shadow:  0px 0px 25px #FFFF00;
+    animation: yellowpulse 2s infinite;
+
+  }
+
+  @keyframes yellowpulse {
+	0% {
+        box-shadow:  0px 0px 0px #FFFF00;
+
+	}
+
+
+    50% {
+        box-shadow:  0px 0px 50px #FFFF00;
+
+	}
+
+	100% {
+        box-shadow:  0px 0px 0px #FFFF00;
+
+	}
+
+    
+}
+
+.orangecard {
+    box-shadow:  0px 0px 25px #ffc40c;
+    animation: orangepulse 2s infinite;
+
+  }
+
+  @keyframes orangepulse {
+	0% {
+        box-shadow:  0px 0px 0px #ffc40c;
+
+	}
+
+
+    50% {
+        box-shadow:  0px 0px 50px #ffc40c;
+
+	}
+
+	100% {
+        box-shadow:  0px 0px 0px #ffc40c;
+
+	}
+
+    
+}
+
+#donations {
+    text-align: left;
+}
+
+li {
+    text-align: left;
+}
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.fakeinput{
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#MOB {
+    color: #F00015;
+}
+
+#headerDesktopLogo{
+  transform: translateY(0px);
+}
+
+@media (min-width: 767px) {
+
+    #headerMobileLogo{
+        display: none;
+
+    }
+
+    .mobileOnly {
+      display: none;
+    }
+
+    #footerspacer{
+      height: 120px;
+    }
+
+    .headerlogo{
+      height: 100px;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    #headerDesktopLogo{
+        display: none;
+
+    }
+
+    #footerspacer{
+      height: 285px;
+    }
+
+    .headerlogo{
+      height: 150px;
+    }
+
+  }
+  
+
+ 
+
+
+  #pausebutton {
+    background-color: #FFA500;
+    border: none;
+  }
+
+  .pauseblink {
+    animation: pauseblinker 1s linear infinite;
+
+  }
+
+  @keyframes pauseblinker {
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  #instructions{
+    height: 50vh;
+  }
+
+  
+
+#fixedcontrolpanel {
+  shape-outside:linear-gradient(transparent,transparent);
+
+}
+
+#controlpanelbody {
+  height: 110px;
+
+  background-color: #0D182C;
+  
+  box-shadow:  0 -10px #FFA500;
+
+
+    
+}
+
+.interestratelabel{
+  font-size: 12px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  
+
+  #controlpanelbody {
+    height: 275px;
+  }
+
+  #interestRate{
+    margin-top: 10px;
+
+    }
+
+  .interestratelabel{
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  #talkdowninflation{
+    margin-top: 10px;
+  }
+
+  #chairmancontrolpanel{
+    
+
+    position: sticky;
+  top: 70vh;
+  
+
+
+  }
+
+}
+
+.advisorwindow{
+  height: 100px;
+}
+
+
+.btn-group .dropdown-menu a.dropdown-item span {
+  color: #04ED00;
+}
+
+.toast-container {
+  z-index: 999999999999;
+}
+
+.toast-body{
+  background-color: #0D182C;
+  text-align: left;
+  /*box-shadow:  0 -10px #FFA500;*/
+}
+
+
+#interestRate{
+  width: 80px;
+  display: inline-block;
+}
+
+.minus{
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+
+#gamewinmodalbody{
+  height: 65vh;
+}
+
+.homepagebuttonwrapper {
+  background-color: #0D182C;
+  border-radius: 10px; /* Adjust the value to control the roundness */
+  box-shadow:  0 -10px #FFA500;
+  max-width: 600px; /* Set your desired max-width for larger screens */
+
+
+}
+
+.instructionscol {
+  /* background-color:#f3f3f3; */
+  border-radius: 10px; /* Adjust the value to control the roundness */
+  border: 3px solid #0D182C; /* Adjust the color and width of the border */
+
+}
+
+.htp {
+  box-shadow:  0 -10px #F00015;
+  
+
+}
+
+.contactcol {
+  box-shadow:  0 -10px #04ED00;
+  background-color: #0D182C;
+  color: #fff;
+
+}
+
+
+
+.submitbutton {
+  background-color: #04ED00;
+}
+
+.submitbutton:hover {
+  background-color: #04d900;
+}
+
+.tg-container {
+  max-width: 400px; /* Set your desired max-width for larger screens */
+}
+
+.tg-button:hover {
+    /* Add the glowing effect on hover */
+    box-shadow: 0 0 10px 3px #389ce9;
+    transition: box-shadow 0.3s ease-in-out;
+  
+}
+
+.crypto-address:hover {
+  /* Increase the size on hover */
+  transform: scale(1.2); /* Increase size by 20% */
+}
+
+
+
+.news-container {
+  min-height: 20px;
+}
+
+
+.bk {
+background-color: #c0ebaf;
+background: repeating-linear-gradient( 45deg, #88c070, #88c070 5px, #c0ebaf 5px, #c0ebaf 25px );
+}
+
+#soundmoneyprereq {
+  color:#F00015
+}

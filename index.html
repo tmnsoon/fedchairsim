@@ -1,0 +1,316 @@
+<head>
+    <title>Fed Chairman Simulator</title>
+    <link rel="icon" type="image/x-icon" href="fedchairsimlogo-favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=0.85" />
+    <meta name="description" content="Take control of an economy as Fed Chairman and see if you can last your term without a crash or hyperinflation!"/>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8806054477761804"
+     crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="halloffamestyles.css">
+<link rel="stylesheet" href="fedstyles.css">
+<link rel="stylesheet" href="fedstylesv3.css">
+
+
+
+</head>
+
+<div class="headerlogo p-1 text-center">
+   <h1><a href="https://fedchairsim.com"><img id="headerDesktopLogo" style="width: 950px;" class="" src="fedchairsimlogoseethruwtag.png" alt="Fed Chairman Simulator"></h1></a>
+   <img id="headerMobileLogo" style="width: 340px;" class="" src="fedchairsimlogopng.png" alt="Fed Chairman Simulator">
+
+   </div>
+
+
+<body class="">
+
+    <div class="container">
+        <div class="row">
+          <!-- Left Column (75%) -->
+          <div class="col-md-9 mt-2">
+            <div class="p-3">
+              <h2>What decisions would you make as head of a central bank? Could you do a better job than the "experts"?</h2>
+              <p>Play a game of Fed Chariman Simulator and find out! It might not be as easy as you think...</p>
+
+              <div class="d-sm-none text-danger">FedChairSim is playable on mobile devices, however it's reccomended to play on a laptop or desktop for the best experience!</div>
+
+            </div>
+          </div>
+      
+          <!-- Right Column (25%) -->
+          <div class="col-md-3">
+            <div class="p-3 text-center mt-2">
+
+                <div class="homepagebuttonwrapper p-3 pb-4">
+            
+                <a id="" href="game.html" class="desktopOnly btn btn-primary startgamemodal startgameafterdefeat p-3 px-4 mt-2">Play FedChairSim</a>
+
+                <button type="button" id="goldbutton" class="btn p-3 px-4 mt-2" onclick="location.href='https://fedchairsim.com/halloffame.php';">&nbsp;&nbsp;&nbsp;&nbsp;Hall of Fame&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+
+
+      <div class="container">
+        <!-- First Row -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="container">
+              <div class="text-center">
+              <h2>How to Play</h2>
+              <p class="text-left">Fed Chairman Simulator is a game that puts you in the seat of Fed Chairman. Below are the metrics you'll need to be familiar with in order to sucessfully navtigate your term in office.</p>
+              </div>
+              <div class="accordion mb-3" id="myAccordion">
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Reputation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                      You must last your 4 year term (1460 days, or 25 real life minutes) as Fed Chairman while maintaing the reputation of the Federal Reserve.
+                                <br><br>
+                In order to achieve this it's critical you stick to your mandates as much as possible, which are to keep GDP above $40k per capita and CPI Inflation between the listed targets:
+              <br><br>
+              <img src="htp02.png" alt="Description of the image" class="img-fluid">
+              <br><br>
+              Every day these GDP & CPI targets are met you gain reputation points, and every day they are not met you lose reputation points.
+              <br><br>
+              If you lose too many reputation points you'll be removed from office.
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Currency Per Capita
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                      <b>Currency</b> per capita refers to how many units of currency exist per person. This number is also the debt per capita, since all currency is created from debt in the fiat system. The higher debt grows the more drag it puts on the economy, since more and more currency is required to service the debt. 
+              <br><br>
+              <img src="htp06.png" alt="Description of the image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion Item 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Velocity
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">
+                      <b>Velocity</b> refers to how fast currency moves throughout the economy.
+              <br><br>
+              <img src="htp07.png" alt="Description of the image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+
+                   <!-- Accordion Item 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            GDP Per Capita
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            <b>GDP Per Capita</b> is a function of Currency multiplied by Velocity, and is a rough indicator for how well the average person is doing financially. 
+              <br><br>
+              <img src="htp09.png" alt="Description of the image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+                <!-- Accordion Item 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            CPI Inflation
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            <b>CPI Inflation</b> refers to how fast consumer prices are rising or falling annually. This is affected by the currency supply, velocity and production.
+              <br><br>
+              <img src="htp10.png" alt="Description of the image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Production Index
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            The <b>Production Index</b> refers to how many physical goods the economy is producing. If it's high the economy is geared more toward producing goods, whereas if it's low the economy is more focused on investing in speculative assets. <br><br>Lower production increases CPI Inflation as there are fewer goods to go around, and vice versa higher production tamps down prices. <br><br>Low interest rates reduce production as captial flows toward speculative unproductive ventures, whereas higher interest rates deflate speculative bubbles and direct capital toward productive investments.
+              <br><br>
+              <img src="htp08.png" alt="Description of the image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Interest Rates & Quantitative Easing/Tightening
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            The two main levers you control are <b>Interest Rates</b> and <b>Quantitative Easing/Tightening</b>. Both of these affect how much currency is in circulation, with higher rates/tighter policy reducing the amount of currency available, and vice versa lower rates increasing the currency available. 
+              <br><br>
+              <img src="htp03.png" alt="Description of the image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+       <!-- Accordion Item 8 -->
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            "Spending" your Reputation
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            Gaining enough reputation will allow you to "spend" some of it by adjusting the CPI target and how it's calculated:
+              <br><br>
+              <img src="htp04.png" alt="Description of the image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Item 9 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            Advisors
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#myAccordion">
+          <div class="accordion-body">
+            Your advisors will let you know when events happen that may require you to respond with policy adjustments:
+              <br><br>
+              <img src="htp05.png" alt="Description of the image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+          
+                <!-- Add more accordion items as needed -->
+          
+              </div>
+            </div>
+            
+            
+
+
+
+          </div>
+          <div class="col-md-6 mt-3">
+            <div class="p-3 text-center instructionscol contactcol">
+              <h2>Feedback & Contact</h2>
+              <div class="text-left">
+
+              <div>
+                We'd love to hear your feedback, suggestions etc either via Telegram:
+                <br><br>
+              </div>
+              <div class="container tg-container">
+              <a class="tg-button" style="display:block;font-size:16px;font-weight:500;text-align:center;border-radius:8px;padding:10px;background:#389ce9;text-decoration:none;color:#fff;" href="https://t.me/fedchairsim" target="_blank"><svg style="width:30px;height:20px;vertical-align:middle;margin:0px 5px;" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Join FedChairSim's Telegram!</a>
+              </div>
+              <br>
+              Or via email:
+
+              <div class="container mt-5">
+                <form action="https://fedchairsim.com/contact_form.php" method="post">
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                  </div>
+                  <button type="submit" class="btn submitbutton text-white">Submit</button>
+                </form>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="p-3 text-center mt-0 mb-1">
+
+          
+
+        
+
+      </div>
+
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+ <div class="footer p-3 text-white" id="footerr">
+    <div class="container">
+    <div class="row">
+        
+        <div class="col-lg-7 col-xxl-8">
+            <p id="donations"><b>If you had fun playing Fed Chairman Simulator, any spare crypto is appreciated: </b><br>
+                <ul>
+                <li><b>BTC:</b> <span class="fakeinput">bc1qz3xapct3a6wylcsgu23jn3u02vmm49g4mp68vt</span>&nbsp;&nbsp;</li>
+                <li><b>ETH:</b> <span class="fakeinput">0x4532DbaBcA66f86aA53AF21189627F3FFBCbB5dA</span></li>
+                <li><b>BNB:</b> <span class="fakeinput">0xdCC95F065298125975D54F269542bb7437b28b5d</span></li>
+            </ul>
+            </p>
+
+            
+        </div>
+
+          <div class="col-lg-1 col-xxl-0">
+            
+        </div>
+
+        <div class="col-lg-4 col-xxl-3 ms-xxl-0">
+            <img id="footerlogo" style="width: 100%;" src="fedchairsimlogo footer.png" alt="">
+            <br><br>
+            <div class="container tg-container">
+              <a class="tg-button" style="display:block;font-size:16px;font-weight:500;text-align:center;border-radius:8px;padding:10px;background:#389ce9;text-decoration:none;color:#fff;" href="https://t.me/fedchairsim" target="_blank"><svg style="width:30px;height:20px;vertical-align:middle;margin:0px 5px;" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Join FedChairSim's Telegram!</a>
+              </div>
+        </div>
+
+        
+    </div>
+    <hr>
+    
+</div>
+ </div>
